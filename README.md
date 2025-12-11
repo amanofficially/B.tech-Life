@@ -36,4 +36,4 @@ A modern, responsive timeline website capturing the 4-year journey of my college
     ```
 3.  **Open `index.html`** in your browser to view the website.
 
-## 📂 Project Structure
+
