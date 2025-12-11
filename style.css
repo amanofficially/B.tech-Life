@@ -73,6 +73,28 @@ header {
     text-align: center; padding: 20px; position: relative; z-index: 2;
 }
 
+/* === NEW STYLE FOR HELLO WORLD === */
+.pixel-hello {
+    font-family: 'Press Start 2P', cursive; /* The pixel font */
+    font-size: 3rem; /* Adjusted Size */
+    text-transform: none;
+    margin-bottom: 25px;
+    letter-spacing: -2px;
+    
+    /* Gradient using your icon colors */
+    background: linear-gradient(90deg, 
+        #74b9ff, /* Soft Blue */
+        #ff7675, /* Soft Red */
+        #fdcb6e, /* Soft Yellow */
+        #55efc4, /* Mint */
+        #a29bfe  /* Lavender */
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* ================================ */
+
 header h1 {
     font-family: var(--font-heading);
     font-size: 6rem; font-weight: 700;
@@ -297,6 +319,8 @@ p { color: var(--text-sec); font-size: 1rem; line-height: 1.7; }
     header h1 { font-size: 3.5rem; }
     .batch-tag { font-size: 0.9rem; }
     
+    .pixel-hello { font-size: 2.2rem; } /* Adjusted size */
+    
     /* Responsive Timeline Adjustments */
     .timeline::before { left: 30px; }
     .row { flex-direction: column; opacity: 1; transform: none; margin-bottom: 50px; }
@@ -319,6 +343,8 @@ p { color: var(--text-sec); font-size: 1rem; line-height: 1.7; }
 @media (max-width: 480px) {
     header { padding: 15px; }
     header h1 { font-size: 2.8rem; }
+    
+    .pixel-hello { font-size: 1.5rem; margin-bottom: 15px; } /* Adjusted size */
     
     .card { width: 100%; max-width: 340px; }
     
