@@ -292,7 +292,7 @@ p { color: var(--text-sec); font-size: 1rem; line-height: 1.7; }
 }
 .signature {
     font-family: var(--font-hand);
-    font-size: 3rem; color: var(--accent); margin-bottom: 40px;
+    font-size: 2.5rem; color: var(--accent); margin-bottom: 40px;
     transform: rotate(-3deg);
 }
 .celebrate-btn {
@@ -365,3 +365,4 @@ p { color: var(--text-sec); font-size: 1rem; line-height: 1.7; }
     .trip-list li { flex-direction: column; align-items: flex-start; gap: 5px; }
     .signature { font-size: 2.2rem; }
 }
+
