@@ -336,7 +336,7 @@ p { color: var(--text-sec); font-size: 1rem; line-height: 1.7; }
 /* Mobile Devices (max-width 480px) */
 @media (max-width: 480px) {
     header { padding: 15px; }
-    header h1 { font-size: 2.8rem; }
+    header h1 { font-size: 2.8rem; padding-right: 10px;}
     
     .pixel-hello { font-size: 1.5rem; margin-bottom: 15px; } /* Adjusted size */
     
