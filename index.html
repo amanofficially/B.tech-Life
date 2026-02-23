@@ -1,268 +1,1179 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B.Tech Journey · 2022–2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="pg-bar"></div>
+    <div class="grain"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B.Tech Journey</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <div class="floating-icons">
-        <i class="fab fa-python"></i>
-        <i class="fab fa-java"></i>
-        <i class="fab fa-js"></i>
-        <i class="fab fa-html5"></i>
-        <i class="fab fa-css3-alt"></i>
-        <i class="fab fa-react"></i>
-        <i class="fab fa-node"></i>
-        <i class="fas fa-database"></i>
-        <i class="fas fa-c"></i>
-        <i class="fas fa-code"></i>
-        <i class="fab fa-github"></i>
-        <i class="fab fa-android"></i>
-        <i class="fas fa-terminal"></i>
-        <i class="fas fa-bug"></i>
-        <i class="fas fa-laptop-code"></i>
+    <!-- FLOATING TECH ICONS -->
+    <div class="float-bg" aria-hidden="true">
+      <i
+        class="fab fa-python"
+        style="--x: 3%; --dur: 30s; --delay: 0s; --sz: 2.8rem; --hue: 210"
+      ></i>
+      <i
+        class="fab fa-java"
+        style="--x: 11%; --dur: 22s; --delay: 4s; --sz: 2rem; --hue: 0"
+      ></i>
+      <i
+        class="fab fa-js"
+        style="--x: 20%; --dur: 34s; --delay: 7s; --sz: 3rem; --hue: 50"
+      ></i>
+      <i
+        class="fab fa-html5"
+        style="--x: 29%; --dur: 20s; --delay: 1s; --sz: 2.4rem; --hue: 20"
+      ></i>
+      <i
+        class="fab fa-css3-alt"
+        style="--x: 38%; --dur: 28s; --delay: 9s; --sz: 2.8rem; --hue: 200"
+      ></i>
+      <i
+        class="fab fa-react"
+        style="--x: 47%; --dur: 25s; --delay: 5s; --sz: 3.2rem; --hue: 190"
+      ></i>
+      <i
+        class="fab fa-node"
+        style="--x: 56%; --dur: 36s; --delay: 2s; --sz: 3.6rem; --hue: 120"
+      ></i>
+      <i
+        class="fas fa-database"
+        style="--x: 65%; --dur: 23s; --delay: 8s; --sz: 2.2rem; --hue: 260"
+      ></i>
+      <i
+        class="fas fa-code"
+        style="--x: 74%; --dur: 29s; --delay: 6s; --sz: 4rem; --hue: 300"
+      ></i>
+      <i
+        class="fab fa-github"
+        style="--x: 83%; --dur: 32s; --delay: 10s; --sz: 2rem; --hue: 240"
+      ></i>
+      <i
+        class="fab fa-android"
+        style="--x: 90%; --dur: 27s; --delay: 2s; --sz: 2.6rem; --hue: 130"
+      ></i>
+      <i
+        class="fas fa-terminal"
+        style="--x: 7%; --dur: 31s; --delay: 12s; --sz: 2rem; --hue: 160"
+      ></i>
+      <i
+        class="fas fa-bug"
+        style="--x: 16%; --dur: 33s; --delay: 14s; --sz: 3rem; --hue: 340"
+      ></i>
+      <i
+        class="fas fa-laptop-code"
+        style="--x: 43%; --dur: 24s; --delay: 16s; --sz: 2.4rem; --hue: 220"
+      ></i>
+      <i
+        class="fab fa-docker"
+        style="--x: 61%; --dur: 37s; --delay: 1s; --sz: 2.8rem; --hue: 200"
+      ></i>
+      <i
+        class="fab fa-linux"
+        style="--x: 77%; --dur: 21s; --delay: 11s; --sz: 2rem; --hue: 40"
+      ></i>
+      <i
+        class="fas fa-microchip"
+        style="--x: 34%; --dur: 35s; --delay: 13s; --sz: 2.2rem; --hue: 280"
+      ></i>
+      <i
+        class="fab fa-git-alt"
+        style="--x: 94%; --dur: 28s; --delay: 5s; --sz: 2.4rem; --hue: 10"
+      ></i>
+      <i
+        class="fab fa-npm"
+        style="--x: 52%; --dur: 19s; --delay: 8s; --sz: 3rem; --hue: 0"
+      ></i>
+      <i
+        class="fas fa-server"
+        style="--x: 69%; --dur: 31s; --delay: 17s; --sz: 1.8rem; --hue: 180"
+      ></i>
+      <i
+        class="fas fa-cloud"
+        style="--x: 25%; --dur: 26s; --delay: 3s; --sz: 2.6rem; --hue: 200"
+      ></i>
+      <i
+        class="fas fa-shield-alt"
+        style="--x: 87%; --dur: 24s; --delay: 9s; --sz: 2rem; --hue: 140"
+      ></i>
     </div>
 
-    <header>
-        <div class="pixel-hello">Hello World !</div>
+    <!-- NAV -->
+    <nav id="nav">
+      <div class="nav-in">
+        <div class="nav-brand">
+          <div class="brand-logo"><span>BJ</span></div>
+          <span class="brand-text">B.Tech Journey</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#squad">Squad</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#trips">Trips</a></li>
+          <li><a href="#quotes">Quotes</a></li>
+        </ul>
+        <div class="nav-right">
+          <div class="nav-badge">CSE · 2022–26</div>
+          <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">
+            <span class="tb-track"
+              ><span class="tb-thumb"
+                ><i class="fas fa-sun ts"></i
+                ><i class="fas fa-moon tm"></i></span
+            ></span>
+          </button>
+        </div>
+      </div>
+    </nav>
 
-        <h1 class="gradient-text">2022 — 2026</h1>
-        <div class="batch-tag">&lt; Computer Science Engineering /&gt;</div>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="h-bgnum" aria-hidden="true">2026</div>
+      <div class="hero-wrap">
+        <div class="hero-l">
+          <div class="hero-ey au" style="--d: 0.08s">
+            <span class="ey-dot"></span>Computer Science Engineering · Batch
+            2022
+          </div>
+          <h1 class="hero-h1 au" style="--d: 0.24s">
+            We came as<br /><em>strangers.</em><br />
+            We leave as<br /><em>brothers.</em>
+          </h1>
+          <p class="hero-sub au" style="--d: 0.44s">
+            Four friends. Eight semesters. A thousand nights of chai, code, and
+            chaos — and somehow we made it out the other side.
+          </p>
+          <div class="type-row au" style="--d: 0.6s">
+            <span class="tpre">currently</span>
+            <span id="h-type"></span><span class="tcursor">|</span>
+          </div>
+          <div class="hero-pills au" style="--d: 0.76s">
+            <span class="hpill pb">4 Friends</span>
+            <span class="hpill po">8 Semesters</span>
+            <span class="hpill py">100+ Chai Sessions</span>
+            <span class="hpill pg">Zero Regrets</span>
+          </div>
+        </div>
+        <div class="hero-r au" style="--d: 0.34s">
+          <div class="collage">
+            <div class="cc c1">
+              <img src="images/1.jpeg" alt="Sem 1" /><span class="ctag"
+                >Sem 1 · 2022</span
+              >
+            </div>
+            <div class="cc c2">
+              <img src="images/4.jpeg" alt="Sem 4" /><span class="ctag"
+                >Sem 4 · 2024</span
+              >
+            </div>
+            <div class="cc c3">
+              <img src="images/5.jpeg" alt="Sem 5" /><span class="ctag"
+                >Sem 5 · 2024</span
+              >
+            </div>
+            <div class="cc c4">
+              <img src="images/7.jpg" alt="Sem 7" /><span class="ctag"
+                >Sem 7 · 2025</span
+              >
+            </div>
+            <div class="cbadge">
+              <span>2022</span><i class="fas fa-arrow-right"></i
+              ><span>2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="stats-bar au" style="--d: 0.9s">
+        <div class="sv">
+          <span class="sn" data-to="4">0</span><span class="sl">Friends</span>
+        </div>
+        <div class="sdiv"></div>
+        <div class="sv">
+          <span class="sn" data-to="8">0</span><span class="sl">Semesters</span>
+        </div>
+        <div class="sdiv"></div>
+        <div class="sv">
+          <span class="sn" data-to="1460">0</span
+          ><span class="sl">Days Together</span>
+        </div>
+        <div class="sdiv"></div>
+        <div class="sv">
+          <span class="sn" data-to="100">0</span
+          ><span class="sl">Chai Sessions</span>
+        </div>
+        <div class="sdiv"></div>
+        <div class="sv">
+          <span class="sn" data-to="9">0</span
+          ><span class="sl">Backlogs Cleared</span>
+        </div>
+        <div class="sdiv"></div>
+        <div class="sv">
+          <span class="sn" data-to="0">0</span
+          ><span class="sl">Trips Taken 😅</span>
+        </div>
+      </div>
+    </section>
 
-        <div class="story-container">
-            <p class="intro-lines">
-                We walked in as strangers, and we are leaving as brothers.
-                <br><br>
-                College wasn't just about the lectures or the labs. It was about the laughter in the canteen, the support
-                during exams, and finding the people who made 4 years feel like 4 minutes.
+    <!-- RIBBON -->
+    <div class="ribbon">
+      <div class="rtrack">
+        <span>2022–2026</span><em>✦</em><span>Four Friends</span><em>✦</em
+        ><span>Eight Semesters</span><em>✦</em><span>100+ Chai Sessions</span
+        ><em>✦</em><span>Zero Trips</span><em>✦</em
+        ><span>Infinite Memories</span><em>✦</em><span>CSE Batch 2022</span
+        ><em>✦</em><span>We Made It</span><em>✦</em> <span>2022–2026</span
+        ><em>✦</em><span>Four Friends</span><em>✦</em
+        ><span>Eight Semesters</span><em>✦</em><span>100+ Chai Sessions</span
+        ><em>✦</em><span>Zero Trips</span><em>✦</em
+        ><span>Infinite Memories</span><em>✦</em><span>CSE Batch 2022</span
+        ><em>✦</em><span>We Made It</span><em>✦</em>
+      </div>
+    </div>
+
+    <!-- SQUAD -->
+    <section class="sec" id="squad">
+      <div class="con">
+        <div class="sh sr">
+          <div class="sh-chip">The People</div>
+          <h2 class="sh-h">Meet the <em>Squad</em></h2>
+          <p class="sh-p">
+            Four very different people who became one unstoppable unit.
+          </p>
+        </div>
+        <div class="squad-g">
+          <div class="sqc sr" style="--ac: #5ba4f5">
+            <div class="sqc-bar"></div>
+            <div class="sqc-glow"></div>
+            <div class="sqc-n">01</div>
+            <div
+              class="sqc-ico"
+              style="--ic: rgba(91, 164, 245, 0.14); --cc: #3d8de8"
+            >
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <div class="sqc-role">Brain & Communication</div>
+            <h3 class="sqc-name">The Scholar</h3>
+            <p class="sqc-body">
+              Sharp mind, impeccable communication — the only one who actually
+              listens in class. Makes everyone look unprepared, but with so much
+              charm you genuinely can't be mad.
             </p>
+            <blockquote class="sqc-qt">
+              "Notes toh maine likhe hain, but samajh toh tum sabko hi aata
+              hai."
+            </blockquote>
+            <span
+              class="sqc-pill"
+              style="
+                color: #3d8de8;
+                background: rgba(91, 164, 245, 0.1);
+                border-color: rgba(91, 164, 245, 0.25);
+              "
+              >Padhaku™</span
+            >
+          </div>
 
-            <p class="quote">"Friends are the family we choose for ourselves."</p>
-
-            <div class="typing-wrapper">
-                <span id="typing-text"></span>
-                <span class="cursor">|</span>
+          <div class="sqc sr" style="--ac: #f5945b; --sd: 0.1s">
+            <div class="sqc-bar"></div>
+            <div class="sqc-glow"></div>
+            <div class="sqc-n">02</div>
+            <div
+              class="sqc-ico"
+              style="--ic: rgba(245, 148, 91, 0.14); --cc: #d96c30"
+            >
+              <i class="fas fa-shield-alt"></i>
             </div>
-        </div>
-    </header>
-
-    <div class="squad-container">
-
-        <div class="card" data-tilt>
-            <div class="card-content">
-                <i class="fas fa-user-graduate"></i>
-                <h3>The Scholar</h3>
-                <span>Brain & Communication</span>
-                <p>The "Padhaku". Sharp mind, perfect communication, and the only one who actually listens in class.</p>
-            </div>
-        </div>
-
-        <div class="card" data-tilt>
-            <div class="card-content">
-                <i class="fas fa-shield-alt"></i>
-                <h3>The Silent Savior</h3>
-                <span>Legendary Comeback</span>
-                <p>Innocent & Introvert. Started with <strong>9 Backlogs</strong>, but his hidden genius saves the group
-                    project every time.</p>
-            </div>
-        </div>
-
-        <div class="card" data-tilt>
-            <div class="card-content">
-                <i class="fas fa-praying-hands"></i>
-                <h3>The Believer</h3>
-                <span>God's Favourite</span>
-                <p>Pure heart. Totally dependent on "God's Plan". Doesn't stress, just manifests passing marks.</p>
-            </div>
-        </div>
-
-        <div class="card" data-tilt>
-            <div class="card-content">
-                <i class="fas fa-film"></i>
-                <h3>The Entertainer</h3>
-                <span>Code & Cinema</span>
-                <p>Movie Lover & Trip Planner. Famous for saying <strong>"Bo"</strong> instead of <strong>"Vo"</strong>. The funniest
-                    storyteller with a sharp coding mind.</p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="timeline">
-
-        <div class="row">
-            <div class="content">
-                <span class="sem-title">2022: Semester 1</span>
-                <h2>The Reality Check</h2>
-                <p>We entered with swag. We left with backlogs. C Language was new, but Physics was the villain.</p>
-
-                <div class="tags">
-                    <span class="tag hard">Mathematics-I</span>
-                    <span class="tag">Principles of C</span>
-                    <span class="tag">Applied Physics</span>
-                </div>
-                <div class="frame"><span><img src="images/5.jpeg" alt="Semester 1 Group Photo"></span></div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="content">
-                <span class="sem-title">2023: Semester 2</span>
-                <h2>The Logic Era</h2>
-                <p>Data Structures entered the chat. Logic started building, and sleep started disappearing.</p>
-
-                <div class="tags">
-                    <span class="tag hard">Mathematics-II</span>
-                    <span class="tag hard">DSA</span>
-                    <span class="tag">OOPs</span>
-                </div>
-
-                <div class="frame"><span><img src="images/WhatsApp Image 2025-12-11 .jpeg" alt="Semester 2 Photo"></span></div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="content">
-                <span class="sem-title">2023: Semester 3</span>
-                <h2>Visuals & Logic</h2>
-                <p>Algorithms got tougher, but Graphics made it fun. We became true night owls.</p>
-
-                <div class="tags">
-                    <span class="tag hard">ADA (Algorithms)</span>
-                    <span class="tag">Core Java</span>
-                    <span class="tag">Computer Graphics</span>
-                </div>
-
-                <div class="frame"><span><img src="images/3.jpeg" alt="Semester 3 Photo"></span></div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="content">
-                <span class="sem-title">2024: Semester 4</span>
-                <h2>Backend Masters</h2>
-                <p>Data is the new oil. We learned how to manage it, optimize it, and design software.</p>
-
-                <div class="tags">
-                    <span class="tag hard">DBMS</span>
-                    <span class="tag">Advanced Java</span>
-                    <span class="tag">Software Engg.</span>
-                </div>
-                <div class="frame"><span><img src="images/8.jpeg" alt="Semester 4 Photo"></span></div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="content">
-                <span class="sem-title">2024: Semester 5</span>
-                <h2>The AI Revolution</h2>
-                <p>The syllabus got futuristic. Python became our best friend. We felt like tech wizards.</p>
-
-                <div class="tags">
-                    <span class="tag hard">TOC</span>
-                    <span class="tag">Intro to AI</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">IoT</span>
-                </div>
-
-                <div class="frame"><span><img src="images/9.jpeg" alt="Semester 5 Photo"></span></div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="content">
-                <span class="sem-title">2025: Semester 6</span>
-                <h2>Cloud & Compilers</h2>
-                <p>We built our own compilers and deployed to the cloud. Peak Engineering attained.</p>
-
-                <div class="tags">
-                    <span class="tag hard">Compiler Design</span>
-                    <span class="tag">Cloud Computing</span>
-                    <span class="tag">Data Mining</span>
-                </div>
-
-                <div class="frame"><span><img src="images/10.jpeg" alt="Semester 6 Photo"></span></div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="content">
-                <span class="sem-title">2025: Semester 7</span>
-                <h2>The Struggle</h2>
-                <p>Placement Season. Suits. Resumes. Mock Interviews. The stress is high, but the bond is stronger.</p>
-
-                <div class="tags">
-                    <span class="tag placement">Placement Prep</span>
-                    <span class="tag">Major Project</span>
-                </div>
-
-                <div class="frame"><span><img src="images/WhatsApp Image 2025-12-11 at 5.03.58 PM.jpeg" alt="Semester 7 Photo"></span></div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="content">
-                <span class="sem-title">2026: Semester 8</span>
-                <h2>The Goodbye</h2>
-                <p>Signatures on shirts. Tears in eyes. Degrees in hand. We made it.</p>
-
-                <div class="tags">
-                    <span class="tag degree">Degree</span>
-                    <span class="tag">Farewell</span>
-                </div>
-
-                <div class="frame"><span>Coming Soon on the way :)</span></div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="trips-section">
-        <h2>The "God's" Plan</h2>
-
-        <div class="trip-card">
-            <p><strong>Official Status Report:</strong></p>
-
-            <ul class="trip-list">
-                <li><span class="strike">Trip to Manali</span> <span class="reason">(Cancelled: "Budget issue")</span></li>
-                <li><span class="strike">Trip to Maheshwar</span> <span class="reason">(Cancelled: "Mummy nahi manegi")</span></li>
-                <li><span class="strike">Road Trip to Leh and Ladakh</span> <span class="reason">(Cancelled: "Exam aagaye")</span></li>
-                <li><span class="success">Chai at Tapri</span> <span class="reason">(Successful: 100+ times)</span></li>
-            </ul>
-
-            <p class="trip-joke">
-                "We planned a world tour every semester, but somehow we always ended up at the same tea stall discussing our
-                imaginary trips."
+            <div class="sqc-role">Legendary Comeback</div>
+            <h3 class="sqc-name">Silent Savior</h3>
+            <p class="sqc-body">
+              Innocent and introvert outside — his hidden genius saves the group
+              project every single time. Started with 9 backlogs and made a
+              comeback that deserves its own documentary.
             </p>
+            <blockquote class="sqc-qt">
+              "Nahi aata tha... but dekh liya phir."
+            </blockquote>
+            <span
+              class="sqc-pill"
+              style="
+                color: #d96c30;
+                background: rgba(245, 148, 91, 0.1);
+                border-color: rgba(245, 148, 91, 0.25);
+              "
+              >9 Backlogs → 0</span
+            >
+          </div>
+
+          <div class="sqc sr" style="--ac: #4ecbb8; --sd: 0.2s">
+            <div class="sqc-bar"></div>
+            <div class="sqc-glow"></div>
+            <div class="sqc-n">03</div>
+            <div
+              class="sqc-ico"
+              style="--ic: rgba(78, 203, 184, 0.14); --cc: #22a090"
+            >
+              <i class="fas fa-praying-hands"></i>
+            </div>
+            <div class="sqc-role">God's Favourite</div>
+            <h3 class="sqc-name">The Believer</h3>
+            <p class="sqc-body">
+              Pure heart, zero stress, maximum faith. Doesn't study — manifests.
+              The universe always delivers for him. Either God is on his side,
+              or examiners are. Possibly both.
+            </p>
+            <blockquote class="sqc-qt">
+              "Bhagwan hai na. Ho jaayega."
+            </blockquote>
+            <span
+              class="sqc-pill"
+              style="
+                color: #22a090;
+                background: rgba(78, 203, 184, 0.1);
+                border-color: rgba(78, 203, 184, 0.25);
+              "
+              >100% Faith</span
+            >
+          </div>
+
+          <div class="sqc sr" style="--ac: #b89af5; --sd: 0.3s">
+            <div class="sqc-bar"></div>
+            <div class="sqc-glow"></div>
+            <div class="sqc-n">04</div>
+            <div
+              class="sqc-ico"
+              style="--ic: rgba(184, 154, 245, 0.14); --cc: #8855d8"
+            >
+              <i class="fas fa-film"></i>
+            </div>
+            <div class="sqc-role">Code & Cinema</div>
+            <h3 class="sqc-name">The Entertainer</h3>
+            <p class="sqc-body">
+              Movie lover, trip planner, professional storyteller. Famous for
+              saying <strong>"Bo"</strong> instead of <strong>"Vo"</strong>.
+              Funniest in every room — with a sharp coding mind nobody expects.
+            </p>
+            <blockquote class="sqc-qt">
+              "Bhai, Bo wala scene toh dekha na? Bo baat hi alag thi."
+            </blockquote>
+            <span
+              class="sqc-pill"
+              style="
+                color: #8855d8;
+                background: rgba(184, 154, 245, 0.1);
+                border-color: rgba(184, 154, 245, 0.25);
+              "
+              >Bo &gt; Vo</span
+            >
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- PULLQUOTE -->
+    <div class="pq-band">
+      <div class="pq-bg-word" aria-hidden="true">CHAI</div>
+      <div class="con">
+        <p class="pq-text sr">
+          "Not all classrooms have four walls. Some of our best lessons happened
+          in canteen corners, on hostel rooftops, and over cutting chai
+          stretched across three hours."
+        </p>
+        <span class="pq-attr sr" style="--sd: 0.15s"
+          >— Something we figured out too late to put in a textbook</span
+        >
+      </div>
     </div>
 
-    <div class="footer">
-        <h2>Time and good friends are two things that become more valuable the older you get.</h2>
-
-        <div class="signature">
-            - Signed by The Gang (2022-2026)
+    <!-- TIMELINE -->
+    <section class="sec tl-sec" id="timeline">
+      <div class="con">
+        <div class="sh sr">
+          <div class="sh-chip">The Chapters</div>
+          <h2 class="sh-h">Eight Semesters, <em>Eight Stories</em></h2>
+          <p class="sh-p">
+            Hover each card to reveal the full story. From clueless freshers to
+            engineers.
+          </p>
         </div>
 
-        <button onclick="confettiEffect()" class="celebrate-btn">Cheers to Us 🥂</button>
-    </div>
+        <div class="tl-wrap">
+          <div class="tl-row sr" style="--ec: #5ba4f5">
+            <div class="tl-spine">
+              <div class="tl-node" style="--nc: #5ba4f5">
+                <span>1</span>
+                <div class="tnr"></div>
+              </div>
+              <div class="tl-vl"></div>
+            </div>
+            <div class="tl-flip">
+              <div class="tl-inner">
+                <div class="tl-front">
+                  <div class="tlf-img">
+                    <img
+                      src="images/1.jpeg"
+                      alt="Sem 1"
+                      onerror="
+                        this.closest('.tlf-img').innerHTML =
+                          '<div class=tlf-ph>SEM 01</div>'
+                      "
+                    />
+                    <div class="tlf-overlay">
+                      <span class="tlf-yr-badge">2022</span
+                      ><span class="tlf-hint"
+                        ><i class="fas fa-sync-alt"></i> Hover</span
+                      >
+                    </div>
+                  </div>
+                  <div class="tlf-body">
+                    <div class="tlf-meta">
+                      <span
+                        class="tlf-chip"
+                        style="
+                          color: #4a90d8;
+                          border-color: rgba(91, 164, 245, 0.3);
+                        "
+                        >Semester 01</span
+                      ><span class="tlf-yr">2022</span>
+                    </div>
+                    <h3 class="tlf-title">The Reality Check</h3>
+                    <p class="tlf-snip">
+                      We walked in with swag and left with backlogs…
+                    </p>
+                  </div>
+                </div>
+                <div class="tl-back" style="--bc: #5ba4f5">
+                  <div class="tlb-head">
+                    <span class="tlb-sem">SEM 01 · 2022</span>
+                    <h3>The Reality Check</h3>
+                  </div>
+                  <div class="tlb-chips">
+                    <span class="tc tw">Mathematics-I</span
+                    ><span class="tc tw">Applied Physics</span
+                    ><span class="tc">Principles of C</span
+                    ><span class="tc tcc">Communication</span>
+                  </div>
+                  <p class="tlb-desc">
+                    We walked in with swag and left with backlogs. Physics
+                    humbled us in month one. C language was new, pointers were
+                    demons, and the canteen became our therapy center.
+                  </p>
+                  <div class="tlb-mem">
+                    <span>💭</span>
+                    <p>
+                      "The day we realized 'Engineering mein aaram hai' was the
+                      biggest lie our seniors ever told us."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-row sr" style="--ec: #f5d45b; --sd: 0.07s">
+            <div class="tl-spine">
+              <div class="tl-node" style="--nc: #f5d45b; --ntc: #6b4e00">
+                <span>2</span>
+                <div class="tnr"></div>
+              </div>
+              <div class="tl-vl"></div>
+            </div>
+            <div class="tl-flip">
+              <div class="tl-inner">
+                <div class="tl-front">
+                  <div class="tlf-img">
+                    <img
+                      src="images/2.jpeg"
+                      alt="Sem 2"
+                      onerror="
+                        this.closest('.tlf-img').innerHTML =
+                          '<div class=tlf-ph>SEM 02</div>'
+                      "
+                    />
+                    <div class="tlf-overlay">
+                      <span class="tlf-yr-badge">2023</span
+                      ><span class="tlf-hint"
+                        ><i class="fas fa-sync-alt"></i> Hover</span
+                      >
+                    </div>
+                  </div>
+                  <div class="tlf-body">
+                    <div class="tlf-meta">
+                      <span
+                        class="tlf-chip"
+                        style="
+                          color: #b08000;
+                          border-color: rgba(245, 212, 91, 0.35);
+                        "
+                        >Semester 02</span
+                      ><span class="tlf-yr">2023</span>
+                    </div>
+                    <h3 class="tlf-title">The Logic Era</h3>
+                    <p class="tlf-snip">Data Structures entered the chat…</p>
+                  </div>
+                </div>
+                <div class="tl-back" style="--bc: #f5d45b">
+                  <div class="tlb-head">
+                    <span class="tlb-sem">SEM 02 · 2023</span>
+                    <h3>The Logic Era</h3>
+                  </div>
+                  <div class="tlb-chips">
+                    <span class="tc tw">Mathematics-II</span
+                    ><span class="tc tw">DSA</span
+                    ><span class="tc">OOPs with Java</span
+                    ><span class="tc tg">Discrete Maths</span>
+                  </div>
+                  <p class="tlb-desc">
+                    Data Structures entered the chat. Linked lists, stacks,
+                    queues — our brains got rewired. Sleep became a luxury.
+                    Logic started building and group study sessions began for
+                    real.
+                  </p>
+                  <div class="tlb-mem">
+                    <span>💭</span>
+                    <p>
+                      "Debugging a linked list at 2 AM, only to find we forgot
+                      to initialize the head node."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-row sr" style="--ec: #f5735b; --sd: 0.14s">
+            <div class="tl-spine">
+              <div class="tl-node" style="--nc: #f5735b; --ntc: #5a1000">
+                <span>3</span>
+                <div class="tnr"></div>
+              </div>
+              <div class="tl-vl"></div>
+            </div>
+            <div class="tl-flip">
+              <div class="tl-inner">
+                <div class="tl-front">
+                  <div class="tlf-img">
+                    <img
+                      src="images/3.jpeg"
+                      alt="Sem 3"
+                      onerror="
+                        this.closest('.tlf-img').innerHTML =
+                          '<div class=tlf-ph>SEM 03</div>'
+                      "
+                    />
+                    <div class="tlf-overlay">
+                      <span class="tlf-yr-badge">2023</span
+                      ><span class="tlf-hint"
+                        ><i class="fas fa-sync-alt"></i> Hover</span
+                      >
+                    </div>
+                  </div>
+                  <div class="tlf-body">
+                    <div class="tlf-meta">
+                      <span
+                        class="tlf-chip"
+                        style="
+                          color: #c03010;
+                          border-color: rgba(245, 115, 91, 0.3);
+                        "
+                        >Semester 03</span
+                      ><span class="tlf-yr">2023</span>
+                    </div>
+                    <h3 class="tlf-title">Visuals & Logic</h3>
+                    <p class="tlf-snip">
+                      Algorithms went from intimidating to beautiful…
+                    </p>
+                  </div>
+                </div>
+                <div class="tl-back" style="--bc: #f5735b">
+                  <div class="tlb-head">
+                    <span class="tlb-sem">SEM 03 · 2023</span>
+                    <h3>Visuals & Logic</h3>
+                  </div>
+                  <div class="tlb-chips">
+                    <span class="tc tw">ADA (Algorithms)</span
+                    ><span class="tc">Core Java</span
+                    ><span class="tc tcc">Computer Graphics</span
+                    ><span class="tc">Digital Electronics</span>
+                  </div>
+                  <p class="tlb-desc">
+                    Algorithms went from intimidating to beautiful. Computer
+                    Graphics made the screen a canvas. We became true night owls
+                    — discovering that 4 AM has its own kind of silence.
+                  </p>
+                  <div class="tlb-mem">
+                    <span>💭</span>
+                    <p>
+                      "Drawing a circle with Bresenham's algorithm felt like
+                      magic — art made purely from mathematics."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-row sr" style="--ec: #4ecbb8; --sd: 0.07s">
+            <div class="tl-spine">
+              <div class="tl-node" style="--nc: #4ecbb8; --ntc: #04382e">
+                <span>4</span>
+                <div class="tnr"></div>
+              </div>
+              <div class="tl-vl"></div>
+            </div>
+            <div class="tl-flip">
+              <div class="tl-inner">
+                <div class="tl-front">
+                  <div class="tlf-img">
+                    <img
+                      src="images/4.jpeg"
+                      alt="Sem 4"
+                      onerror="
+                        this.closest('.tlf-img').innerHTML =
+                          '<div class=tlf-ph>SEM 04</div>'
+                      "
+                    />
+                    <div class="tlf-overlay">
+                      <span class="tlf-yr-badge">2024</span
+                      ><span class="tlf-hint"
+                        ><i class="fas fa-sync-alt"></i> Hover</span
+                      >
+                    </div>
+                  </div>
+                  <div class="tlf-body">
+                    <div class="tlf-meta">
+                      <span
+                        class="tlf-chip"
+                        style="
+                          color: #1a8870;
+                          border-color: rgba(78, 203, 184, 0.3);
+                        "
+                        >Semester 04</span
+                      ><span class="tlf-yr">2024</span>
+                    </div>
+                    <h3 class="tlf-title">Backend Masters</h3>
+                    <p class="tlf-snip">
+                      Data is the new oil — we started refining it…
+                    </p>
+                  </div>
+                </div>
+                <div class="tl-back" style="--bc: #4ecbb8">
+                  <div class="tlb-head">
+                    <span class="tlb-sem">SEM 04 · 2024</span>
+                    <h3>Backend Masters</h3>
+                  </div>
+                  <div class="tlb-chips">
+                    <span class="tc tw">DBMS</span
+                    ><span class="tc">Advanced Java</span
+                    ><span class="tc">Software Engg.</span
+                    ><span class="tc tt">Computer Networks</span>
+                  </div>
+                  <p class="tlb-desc">
+                    Data is the new oil — we started learning to refine it. DBMS
+                    changed our thinking. Software Engineering taught us code is
+                    only 20% of software; the rest is people and process.
+                  </p>
+                  <div class="tlb-mem">
+                    <span>💭</span>
+                    <p>
+                      "First SQL query that returned the right result — felt
+                      like solving a puzzle we didn't know we were playing."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-row sr" style="--ec: #85c1f5; --sd: 0.14s">
+            <div class="tl-spine">
+              <div class="tl-node" style="--nc: #85c1f5; --ntc: #0a3060">
+                <span>5</span>
+                <div class="tnr"></div>
+              </div>
+              <div class="tl-vl"></div>
+            </div>
+            <div class="tl-flip">
+              <div class="tl-inner">
+                <div class="tl-front">
+                  <div class="tlf-img">
+                    <img
+                      src="images/5.jpeg"
+                      alt="Sem 5"
+                      onerror="
+                        this.closest('.tlf-img').innerHTML =
+                          '<div class=tlf-ph>SEM 05</div>'
+                      "
+                    />
+                    <div class="tlf-overlay">
+                      <span class="tlf-yr-badge">2024</span
+                      ><span class="tlf-hint"
+                        ><i class="fas fa-sync-alt"></i> Hover</span
+                      >
+                    </div>
+                  </div>
+                  <div class="tlf-body">
+                    <div class="tlf-meta">
+                      <span
+                        class="tlf-chip"
+                        style="
+                          color: #2068c0;
+                          border-color: rgba(133, 193, 245, 0.3);
+                        "
+                        >Semester 05</span
+                      ><span class="tlf-yr">2024</span>
+                    </div>
+                    <h3 class="tlf-title">The AI Revolution</h3>
+                    <p class="tlf-snip">The syllabus went futuristic…</p>
+                  </div>
+                </div>
+                <div class="tl-back" style="--bc: #85c1f5">
+                  <div class="tlb-head">
+                    <span class="tlb-sem">SEM 05 · 2024</span>
+                    <h3>The AI Revolution</h3>
+                  </div>
+                  <div class="tlb-chips">
+                    <span class="tc tw">TOC</span><span class="tc">AI / ML</span
+                    ><span class="tc tt">Python</span
+                    ><span class="tc tt">IoT</span>
+                  </div>
+                  <p class="tlb-desc">
+                    The syllabus went futuristic. Python became our best friend
+                    overnight. For the first time we felt like we were genuinely
+                    building the future — not just studying it.
+                  </p>
+                  <div class="tlb-mem">
+                    <span>💭</span>
+                    <p>
+                      "Our first AI model correctly identifying something we fed
+                      it. We looked at each other and just felt it."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-row sr" style="--ec: #b89af5; --sd: 0.07s">
+            <div class="tl-spine">
+              <div class="tl-node" style="--nc: #b89af5; --ntc: #280870">
+                <span>6</span>
+                <div class="tnr"></div>
+              </div>
+              <div class="tl-vl"></div>
+            </div>
+            <div class="tl-flip">
+              <div class="tl-inner">
+                <div class="tl-front">
+                  <div class="tlf-img">
+                    <img
+                      src="images/6.jpeg"
+                      alt="Sem 6"
+                      onerror="
+                        this.closest('.tlf-img').innerHTML =
+                          '<div class=tlf-ph>SEM 06</div>'
+                      "
+                    />
+                    <div class="tlf-overlay">
+                      <span class="tlf-yr-badge">2025</span
+                      ><span class="tlf-hint"
+                        ><i class="fas fa-sync-alt"></i> Hover</span
+                      >
+                    </div>
+                  </div>
+                  <div class="tlf-body">
+                    <div class="tlf-meta">
+                      <span
+                        class="tlf-chip"
+                        style="
+                          color: #6030c0;
+                          border-color: rgba(184, 154, 245, 0.3);
+                        "
+                        >Semester 06</span
+                      ><span class="tlf-yr">2025</span>
+                    </div>
+                    <h3 class="tlf-title">Cloud & Compilers</h3>
+                    <p class="tlf-snip">We built our own mini-compilers…</p>
+                  </div>
+                </div>
+                <div class="tl-back" style="--bc: #b89af5">
+                  <div class="tlb-head">
+                    <span class="tlb-sem">SEM 06 · 2025</span>
+                    <h3>Cloud & Compilers</h3>
+                  </div>
+                  <div class="tlb-chips">
+                    <span class="tc tw">Compiler Design</span
+                    ><span class="tc">Cloud Computing</span
+                    ><span class="tc tp">Data Mining</span
+                    ><span class="tc">Info. Security</span>
+                  </div>
+                  <p class="tlb-desc">
+                    We built our own mini-compilers. We deployed to the actual
+                    cloud. Peak engineering — achieved. Somewhere this semester,
+                    we quietly became the seniors who know their stuff.
+                  </p>
+                  <div class="tlb-mem">
+                    <span>💭</span>
+                    <p>
+                      "Running our compiler on code — a program written in a
+                      language we built ourselves. Wild."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-row sr" style="--ec: #f59ac5; --sd: 0.14s">
+            <div class="tl-spine">
+              <div class="tl-node" style="--nc: #f59ac5; --ntc: #600030">
+                <span>7</span>
+                <div class="tnr"></div>
+              </div>
+              <div class="tl-vl"></div>
+            </div>
+            <div class="tl-flip">
+              <div class="tl-inner">
+                <div class="tl-front">
+                  <div class="tlf-img">
+                    <img
+                      src="images/7.jpg"
+                      alt="Sem 7"
+                      onerror="
+                        this.closest('.tlf-img').innerHTML =
+                          '<div class=tlf-ph>SEM 07</div>'
+                      "
+                    />
+                    <div class="tlf-overlay">
+                      <span class="tlf-yr-badge">2025</span
+                      ><span class="tlf-hint"
+                        ><i class="fas fa-sync-alt"></i> Hover</span
+                      >
+                    </div>
+                  </div>
+                  <div class="tlf-body">
+                    <div class="tlf-meta">
+                      <span
+                        class="tlf-chip"
+                        style="
+                          color: #c03070;
+                          border-color: rgba(245, 154, 197, 0.3);
+                        "
+                        >Semester 07</span
+                      ><span class="tlf-yr">2025</span>
+                    </div>
+                    <h3 class="tlf-title">The Struggle</h3>
+                    <p class="tlf-snip">Placement season hit hard…</p>
+                  </div>
+                </div>
+                <div class="tl-back" style="--bc: #f59ac5">
+                  <div class="tlb-head">
+                    <span class="tlb-sem">SEM 07 · 2025</span>
+                    <h3>The Struggle</h3>
+                  </div>
+                  <div class="tlb-chips">
+                    <span class="tc tw">Placements</span
+                    ><span class="tc tw">DSA Revision</span
+                    ><span class="tc">Major Project</span>
+                  </div>
+                  <p class="tlb-desc">
+                    Placement season hit hard. Suits never worn before. Resumes
+                    longer than our lives. Mock interviews, rejections, biryani
+                    to recover — and showing up again the very next morning.
+                  </p>
+                  <div class="tlb-mem">
+                    <span>💭</span>
+                    <p>
+                      "After a rejection call, we ordered biryani and laughed by
+                      night. That resilience — no company can take it."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-row tl-last sr" style="--ec: #5ba4f5; --sd: 0.07s">
+            <div class="tl-spine">
+              <div
+                class="tl-node tl-nf"
+                style="--nc: linear-gradient(135deg, #5ba4f5, #b89af5)"
+              >
+                <span>8</span>
+                <div class="tnr"></div>
+              </div>
+            </div>
+            <div class="tl-flip tl-flip-final">
+              <div class="tl-inner">
+                <div class="tl-front">
+                  <div class="tlf-img tlf-coming">
+                    <div class="tlf-cs">
+                      <span>📸</span>
+                      <p>Coming Soon</p>
+                      <small>The Best One</small>
+                    </div>
+                  </div>
+                  <div class="tlf-body">
+                    <div class="tlf-meta">
+                      <span class="tlf-chip tlf-chip-f">Semester 08</span
+                      ><span class="tlf-yr" style="color: var(--acc)"
+                        >2026 ✨</span
+                      >
+                    </div>
+                    <h3 class="tlf-title">The Goodbye</h3>
+                    <p class="tlf-snip">
+                      Signatures on shirts. Tears we called allergies…
+                    </p>
+                  </div>
+                </div>
+                <div class="tl-back tl-back-f" style="--bc: #5ba4f5">
+                  <div class="tlb-head">
+                    <span class="tlb-sem">SEM 08 · 2026</span>
+                    <h3>The Goodbye ✨</h3>
+                  </div>
+                  <div class="tlb-chips">
+                    <span class="tc tf">Final Project</span
+                    ><span class="tc tf">Degree</span
+                    ><span class="tc tf">Farewell</span>
+                  </div>
+                  <p class="tlb-desc">
+                    Signatures on shirts. Tears in eyes we called allergies.
+                    Degrees in hand. We made it. Every backlog, every
+                    all-nighter, every chai at tapri — it all led here. To this.
+                    To us.
+                  </p>
+                  <div class="tlb-mem tlb-mem-f">
+                    <span>✨</span>
+                    <p>
+                      "The last time all four sat in the same classroom. Nobody
+                      said anything. We didn't need to. We all felt it."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRIPS -->
+    <section class="sec trips-sec" id="trips">
+      <div class="con">
+        <div class="sh sr">
+          <div class="sh-chip">The Adventures (Planned)</div>
+          <h2 class="sh-h">God's Plan <em>vs.</em> Our Plan</h2>
+          <p class="sh-p">
+            We planned the world. We reached the tapri. No regrets whatsoever.
+          </p>
+        </div>
+        <div class="trips-duo">
+          <div class="tp tp-no sr">
+            <div class="tp-lbl tp-no-lbl">
+              <i class="fas fa-times-circle"></i> Planned Every Semester
+            </div>
+            <div class="tpr">
+              <span class="tpd tpd-n"></span>
+              <div>
+                <div class="tpn tpn-x">Trip to Manali</div>
+                <div class="tpw">"Budget issue bhai"</div>
+              </div>
+            </div>
+            <div class="tpr">
+              <span class="tpd tpd-n"></span>
+              <div>
+                <div class="tpn tpn-x">Trip to Maheshwar</div>
+                <div class="tpw">"Mummy nahi manegi"</div>
+              </div>
+            </div>
+            <div class="tpr">
+              <span class="tpd tpd-n"></span>
+              <div>
+                <div class="tpn tpn-x">Leh & Ladakh Road Trip</div>
+                <div class="tpw">"Exam aagaye yaar"</div>
+              </div>
+            </div>
+            <div class="tpr">
+              <span class="tpd tpd-n"></span>
+              <div>
+                <div class="tpn tpn-x">Goa End-Sem Trip</div>
+                <div class="tpw">"Train mili nahi"</div>
+              </div>
+            </div>
+            <div class="tpr">
+              <span class="tpd tpd-n"></span>
+              <div>
+                <div class="tpn tpn-x">Weekend Trip Anywhere</div>
+                <div class="tpw">"Kal practical hai"</div>
+              </div>
+            </div>
+          </div>
+          <div class="tp tp-yes sr" style="--sd: 0.15s">
+            <div class="tp-lbl tp-yes-lbl">
+              <i class="fas fa-check-circle"></i> What Actually Happened
+            </div>
+            <div class="tpr">
+              <span class="tpd tpd-y"></span>
+              <div>
+                <div class="tpn tpn-w">Chai at Tapri</div>
+                <div class="tpw tpw-y">100+ documented sessions</div>
+              </div>
+            </div>
+            <div class="tpr">
+              <span class="tpd tpd-y"></span>
+              <div>
+                <div class="tpn tpn-w">Canteen Ke Parathe</div>
+                <div class="tpw tpw-y">Every single morning</div>
+              </div>
+            </div>
+            <div class="tpr">
+              <span class="tpd tpd-y"></span>
+              <div>
+                <div class="tpn tpn-w">3 AM Campus Walks</div>
+                <div class="tpw tpw-y">Before every exam</div>
+              </div>
+            </div>
+            <div class="tpr">
+              <span class="tpd tpd-y"></span>
+              <div>
+                <div class="tpn tpn-w">BGMI Marathon Sessions</div>
+                <div class="tpw tpw-y">Infinite times</div>
+              </div>
+            </div>
+            <div class="tpr">
+              <span class="tpd tpd-y"></span>
+              <div>
+                <div class="tpn tpn-w">Being There For Each Other</div>
+                <div class="tpw tpw-y">Every single day</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="trips-note sr">
+          <div class="tn-q">"</div>
+          <p>
+            "We planned a world tour every semester but always ended up at the
+            same tea stall, on the same broken bench, discussing our imaginary
+            trips. Those chai sessions with you three were better than any
+            Manali trip could ever be."
+          </p>
+          <cite>— The Entertainer, ordering yet another cutting chai</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTES -->
+    <section class="sec quotes-sec" id="quotes">
+      <div class="con">
+        <div class="sh sr">
+          <div class="sh-chip">Words to Carry Forward</div>
+          <h2 class="sh-h">Quotes for <em>the Road</em></h2>
+        </div>
+        <div class="q-grid">
+          <div class="qc sr" style="--qc: #5ba4f5">
+            <div class="qbar"></div>
+            <p>
+              "The people crazy enough to think they can change the world are
+              the ones who do."
+            </p>
+            <cite>— Steve Jobs · Our North Star</cite>
+          </div>
+          <div class="qc sr" style="--qc: #f5d45b; --sd: 0.07s">
+            <div class="qbar"></div>
+            <p>
+              "It does not matter how slowly you go as long as you do not stop."
+            </p>
+            <cite>— Confucius · For every backlog we cleared</cite>
+          </div>
+          <div class="qc sr" style="--qc: #f5735b; --sd: 0.14s">
+            <div class="qbar"></div>
+            <p>
+              "Time and good friends are two things that become more valuable
+              the older you get."
+            </p>
+            <cite>— The truest thing we know</cite>
+          </div>
+          <div class="qc sr" style="--qc: #4ecbb8; --sd: 0.07s">
+            <div class="qbar"></div>
+            <p>
+              "We didn't realize we were making memories. We just knew we were
+              having fun."
+            </p>
+            <cite>— Winnie the Pooh · Every tapri session</cite>
+          </div>
+          <div class="qc sr" style="--qc: #b89af5; --sd: 0.14s">
+            <div class="qbar"></div>
+            <p>"Friends are the family we choose for ourselves."</p>
+            <cite>— Edna Buchanan · Day One, 2022</cite>
+          </div>
+          <div class="qc sr" style="--qc: #85c1f5; --sd: 0.21s">
+            <div class="qbar"></div>
+            <p>"First, solve the problem. Then, write the code."</p>
+            <cite>— Lesson ignored until Sem 6</cite>
+          </div>
+          <div class="qc sr" style="--qc: #f59ac5">
+            <div class="qbar"></div>
+            <p>
+              "The strength of the team is each individual member. The strength
+              of each member is the team."
+            </p>
+            <cite>— Phil Jackson · Squad motto</cite>
+          </div>
+          <div class="qc sr" style="--qc: #5ba4f5; --sd: 0.07s">
+            <div class="qbar"></div>
+            <p>
+              "Success is not the key to happiness. Happiness is the key to
+              success."
+            </p>
+            <cite>— Albert Schweitzer</cite>
+          </div>
+          <div class="qc sr" style="--qc: #f5d45b; --sd: 0.14s">
+            <div class="qbar"></div>
+            <p>
+              "Engineering is not just about equations — the hardest problems
+              are always human."
+            </p>
+            <cite>— Figured out in Sem 7</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="ft-bar"></div>
+      <div class="con ft-body">
+        <div class="ft-badge">Class of 2026</div>
+        <h2 class="ft-h">
+          Four Friends.<br /><em>One Unforgettable Journey.</em>
+        </h2>
+        <p class="ft-q">
+          "Time and good friends are two things that become more valuable the
+          older you get."
+        </p>
+        <div class="ft-sig">— Signed by The Gang · CSE Batch 2022–2026</div>
+        <button class="ft-btn" onclick="celebrate()">
+          🥂 &nbsp;Cheers to Us
+        </button>
+        <p class="ft-copy">
+          Made with late nights, bad Wi-Fi &amp; a lot of chai · 2026
+        </p>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
-
-
