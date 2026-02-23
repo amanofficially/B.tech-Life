@@ -1936,58 +1936,75 @@ footer {
     grid-template-columns: 50px 1fr;
   }
 
-  /* Mobile timeline: stack image on top of content */
-  .tl-front {
-    grid-template-columns: 1fr;
-    grid-template-rows: 160px auto;
-  }
-
+  /* ── Mobile timeline: completely disable 3D flip, use show/hide instead ── */
   .tl-flip {
     height: auto;
-    min-height: 320px;
+    min-height: unset;
+    perspective: none;
   }
 
   .tl-flip-final {
     height: auto;
-    min-height: 340px;
+    min-height: unset;
   }
 
   .tl-inner {
-    height: 100%;
-    min-height: 320px;
-  }
-
-  .tl-front,
-  .tl-back {
     position: relative;
     height: auto;
+    min-height: unset;
+    transform-style: flat;
+    transition: none;
+    transform: none !important;
   }
 
-  /* On mobile, disable the 3D flip and show content directly */
+  /* Front card: stacked layout, image on top */
   .tl-front {
     position: relative;
     backface-visibility: visible;
     -webkit-backface-visibility: visible;
     transform: none !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: 160px auto;
+    height: auto;
   }
 
-  .tl-inner {
-    transform-style: flat;
-    transition: none;
-  }
-
+  /* Back card: hidden by default, shown flat on tap */
   .tl-back {
+    position: relative;
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+    transform: none !important;
+    display: none;
+    height: auto;
+    /* Remove line-clamp restrictions on mobile */
+    overflow: visible;
+  }
+
+  /* Remove text truncation on back side for mobile */
+  .tl-back .tlb-desc {
+    display: block;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+    overflow: visible;
+  }
+
+  .tl-back .tlb-mem p {
+    display: block;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+    overflow: visible;
+  }
+
+  /* Tap to flip: show back, hide front */
+  .tl-flip.flipped .tl-front {
     display: none;
   }
 
   .tl-flip.flipped .tl-back {
     display: flex;
-    position: relative;
-    transform: none;
-  }
-
-  .tl-flip.flipped .tl-front {
-    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
   }
 
   .tlf-img {
@@ -2002,9 +2019,23 @@ footer {
   .tlf-body {
     padding: 16px 18px;
   }
-
   .tlf-title {
     font-size: 1.25rem;
+  }
+
+  .tlb-head h3 {
+    font-size: 1.15rem;
+  }
+  .tlb-desc {
+    font-size: 0.82rem;
+    line-height: 1.65;
+  }
+  .tlb-mem {
+    padding: 10px 12px;
+  }
+  .tlb-mem p {
+    font-size: 0.78rem;
+    line-height: 1.5;
   }
 
   .trips-duo {
@@ -2048,5 +2079,14 @@ footer {
   }
   .tlf-snip {
     font-size: 0.8rem;
+  }
+
+  .tl-flip.flipped .tl-back {
+    padding: 16px;
+    gap: 8px;
+  }
+
+  .tlb-head h3 {
+    font-size: 1rem;
   }
 }
