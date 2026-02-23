@@ -1968,15 +1968,14 @@ footer {
     height: auto;
   }
 
-  /* Back card: hidden by default, shown flat on tap */
+  /* Back card: hidden by default, shown flat on tap — reset the desktop rotateY(180deg) */
   .tl-back {
     position: relative;
     backface-visibility: visible;
     -webkit-backface-visibility: visible;
-    transform: none !important;
+    transform: rotateY(0deg) !important;
     display: none;
     height: auto;
-    /* Remove line-clamp restrictions on mobile */
     overflow: visible;
   }
 
