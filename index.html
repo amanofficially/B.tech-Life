@@ -920,9 +920,14 @@
                 <div class="tl-front">
                   <div class="tlf-img tlf-coming">
                     <div class="tlf-cs">
-                      <span>📸</span>
-                      <p>Coming Soon</p>
-                      <small>The Best One</small>
+                     <img
+                      src="images/8.jpg"
+                      alt="Sem 7"
+                      onerror="
+                        this.closest('.tlf-img').innerHTML =
+                          '<div class=tlf-ph>SEM 07</div>'
+                      "
+                    />
                     </div>
                   </div>
                   <div class="tlf-body">
