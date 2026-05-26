@@ -464,7 +464,7 @@ strong {
   font-weight: 900;
   font-size: clamp(16rem, 26vw, 28rem);
   color: var(--ink);
-  opacity: 0.022;
+  opacity: 0.030;
   line-height: 1;
   pointer-events: none;
   letter-spacing: -14px;
